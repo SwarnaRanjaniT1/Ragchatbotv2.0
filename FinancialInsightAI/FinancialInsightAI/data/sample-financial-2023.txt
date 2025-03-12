@@ -1,0 +1,61 @@
+ACME Corporation
+Annual Financial Statement 2023
+
+INCOME STATEMENT
+(in millions USD)
+                           2023      2022      2021
+Revenue                   5,420     4,890     4,150
+Cost of Revenue          (3,250)   (2,950)   (2,480)
+Gross Profit              2,170     1,940     1,670
+Operating Expenses       (1,430)   (1,320)   (1,120)
+Operating Income            740       620       550
+Other Income                 85        65        40
+Interest Expense           (120)     (110)      (95)
+Income Before Tax           705       575       495
+Income Tax Expense         (176)     (144)     (124)
+Net Income                  529       431       371
+
+BALANCE SHEET
+(in millions USD)
+                           2023      2022      2021
+ASSETS
+Cash and Equivalents      1,240       980       820
+Accounts Receivable         720       650       580
+Inventory                   940       880       790
+Other Current Assets        310       280       240
+Total Current Assets      3,210     2,790     2,430
+Property and Equipment    2,860     2,720     2,540
+Intangible Assets         1,450     1,380     1,320
+Goodwill                  1,230     1,230     1,230
+Other Non-current Assets    540       480       420
+Total Assets              9,290     8,600     7,940
+
+LIABILITIES
+Accounts Payable            680       620       550
+Short-term Debt             420       390       360
+Other Current Liabilities   350       320       290
+Total Current Liabilities 1,450     1,330     1,200
+Long-term Debt            2,240     2,120     1,980
+Other Non-current Liab.     780       730       680
+Total Liabilities         4,470     4,180     3,860
+Total Equity              4,820     4,420     4,080
+Total Liabilities & Equity 9,290    8,600     7,940
+
+CASH FLOW STATEMENT
+(in millions USD)
+                           2023      2022      2021
+Operating Activities        910       780       680
+Investing Activities       (620)     (550)     (490)
+Financing Activities        (30)      (70)      (50)
+Net Cash Flow               260       160       140
+Beginning Cash Balance      980       820       680
+Ending Cash Balance       1,240       980       820
+
+KEY FINANCIAL RATIOS
+                           2023      2022      2021
+Return on Equity           11.0%      9.8%      9.1%
+Return on Assets            5.7%      5.0%      4.7%
+Profit Margin               9.8%      8.8%      8.9%
+Debt to Equity              0.55       0.57      0.57
+Current Ratio               2.21       2.10      2.03
+Quick Ratio                 1.35       1.23      1.17

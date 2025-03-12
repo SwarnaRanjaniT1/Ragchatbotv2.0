@@ -1,0 +1,36 @@
+PyPDF2.errors.DependencyError: PyCryptodome is required for AES algorithm
+Traceback:
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 121, in exec_func_with_error_handling
+    result = func()
+             ^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 593, in code_to_exec
+    exec(code, module.__dict__)
+File "/home/runner/workspace/main.py", line 156, in <module>
+    main()
+File "/home/runner/workspace/main.py", line 96, in main
+    rag_system.initialize_document_store()
+File "/home/runner/workspace/rag_system.py", line 35, in initialize_document_store
+    documents = self.doc_processor.load_documents()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/document_processor.py", line 52, in load_documents
+    text = self._extract_text_from_pdf(file_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/document_processor.py", line 96, in _extract_text_from_pdf
+    reader = PyPDF2.PdfReader(file)
+             ^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/PyPDF2/_reader.py", line 339, in __init__
+    self._encryption.verify(pwd) == PasswordType.NOT_DECRYPTED
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/PyPDF2/_encryption.py", line 785, in verify
+    key, rc = self.verify_v4(pwd) if self.algV <= 4 else self.verify_v5(pwd)
+                                                         ^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/PyPDF2/_encryption.py", line 836, in verify_v5
+    key = AlgV5.verify_owner_password(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/PyPDF2/_encryption.py", line 530, in verify_owner_password
+    AlgV5.calculate_hash(R, password, o_value[32:40], u_value[:48])
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/PyPDF2/_encryption.py", line 561, in calculate_hash
+    E = AES_CBC_encrypt(K[:16], K[16:32], K1 * 64)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/PyPDF2/_encryption.py", line 162, in AES_CBC_encrypt
+    raise DependencyError("PyCryptodome is required for AES algorithm")

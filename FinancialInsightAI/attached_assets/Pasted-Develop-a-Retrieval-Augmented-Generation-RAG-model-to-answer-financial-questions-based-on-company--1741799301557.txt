@@ -1,0 +1,37 @@
+Develop a Retrieval-Augmented Generation (RAG) model to answer financial questions based on company financial statements (last two years).
+
+ 
+
+IMPORTANT
+
+Use Only Open-Source Embedding Models
+Use a Small Open-Source Language Model (SLM) for Response Generation (No proprietary APIs)
+Implement One Guardrail (Either Input-side or Output-side)
+Develop an Application Interface (Web-based, CLI, or GUI)
+Implements Advanced RAG Technique Hybrid Search (Sparse + Dense Retrieval)
+
+Component	Details
+1. Data Collection & Preprocessing	Download the last two years of financials (Use any one group member's company earning statements, if nothing is available use any company's data freely available). Clean and structure the data for retrieval.
+2. Basic RAG Implementation	Implement a simple RAG model:
+- Convert financial documents into text chunks.
+- Embed using a pre-trained model
+- Store and retrieve using a basic vector database
+3. Advanced RAG Implementation	Improve retrieval by:
+- Using BM25 for keyword-based search alongside embeddings.
+- Testing different chunk sizes & retrieval methods for better accuracy.
+- Implementing re-ranking.
+4. UI Development (e.g., Streamlit)	Build an interactive UI:
+- Accept user queries.
+- Display answer & confidence score.
+- Ensure clear formatting & responsiveness.
+5. Guard Rail Implementation	Implement one guardrail:
+- Input-Side: Validate and filter user queries to prevent irrelevant/harmful inputs.
+- Output-Side: Filter responses to remove hallucinated or misleading answers.
+6. Testing & Validation	Ask 3 test questions:
+- A relevant financial question (high-confidence).
+- A relevant financial question (low-confidence).
+- An irrelevant question (e.g., "What is the capital of France?") to check system robustness.
+The zip file should contain 2 files:
+Share the Python Notebook (the implementations of basic and advanced RAG should be clearly highlighted and explained in comments). This file can be in .py or .ipynb format.
+A PDF file containing 3 screenshots of the implementation of the above mentioned questions (this should include the question asked, the answer and the confidence score for all the 3 questions mentioned above). You are free to use any relevant evaluation metric for confidence score. The PDF file should also include the hosted app link (e.g., if you prefer Streamlit, here is how you can host a Streamlit app for free https://blog.streamlit.io/host-your-streamlit-app-for-free/Links to an external site.).
+Each group should submit one zip file only. The names of all the files and the zip file should start with the group number (e.g., Group_XX_<filename>.<filetype>). group number is 19

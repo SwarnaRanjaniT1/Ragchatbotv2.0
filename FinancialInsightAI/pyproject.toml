@@ -1,0 +1,27 @@
+[project]
+name = "repl-nix-workspace"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain>=0.3.20",
+    "nltk>=3.9.1",
+    "numpy>=2.2.3",
+    "pycryptodome>=3.21.0",
+    "pypdf2>=3.0.1",
+    "rank-bm25>=0.2.2",
+    "scikit-learn>=1.6.1",
+    "sentence-transformers>=3.4.1",
+    "streamlit>=1.43.2",
+    "torch>=2.6.0",
+    "transformers>=4.49.0",
+]
+
+[[tool.uv.index]]
+explicit = true
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu", marker = "platform_system == 'Linux'" }]
+torchvision = [{ index = "pytorch-cpu", marker = "platform_system == 'Linux'" }]
